@@ -1,14 +1,14 @@
 title: Touch Directives
 ---
 
-Quasar offers the following touch directives: `v-swipe`, `v-pan` and `v-hold`.
+Quasar offers the following touch directives: `v-touch-swipe`, `v-pan` and `v-hold`.
 
 > **These directives also work with mouse events, not only touch events**, so you are able to build cool functionality for your App on desktops too.
 
-## Directive "v-swipe"
+## Directive "v-touch-swipe"
 * **Basic Usage**:
   ``` html
-  <div v-swipe="handler">...</div>
+  <div v-touch-swipe="handler">...</div>
   // "handler" is a Function which receives an Object as parameter
   ```
 * **Parameter**: The `handler` function/method is called by the directive when a `swipe` touch action took place on the DOM element and it receives the following parameter:
@@ -30,7 +30,7 @@ Quasar offers the following touch directives: `v-swipe`, `v-pan` and `v-hold`.
 * **Modifiers**: `horizontal` or `vertical`
   Use it when you only want to capture horizontal or vertical swipes.
   ``` html
-  <div v-swipe.horizontal="userHasSwiped">...</div>
+  <div v-touch-swipe.horizontal="userHasSwiped">...</div>
   ```
 
 > Directive allows vertical scroll when capturing only horizontal swipes.
